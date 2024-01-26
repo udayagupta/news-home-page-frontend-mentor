@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+
+:root {
+    --primary-clr-soft-orange: hsl(35, 77%, 62%);
+    --primary-soft-red: hsl(5, 85%, 63%);
+
+    --neutral-off-white: hsl(36, 100%, 99%);
+    --neutral-grayish-blue: hsl(233, 8%, 79%);
+    --neutral-dark-grayish-blue: hsl(236, 13%, 42%);
+    --neutral-very-dark-blue: hsl(240, 100%, 5%);
+
+    --normal: 400;
+    --semi-bold: 700;
+    --bold: 800;
+}
+
+h1 {
+    font-weight: var(--bold);
+    color: var(--neutral-very-dark-blue);
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 2rem;
+    padding-inline: 4rem;
+    
+}
+
+header {
+    display: flex;
+    max-height: 20vw;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+
+nav {
+    display: flex;
+}
+
+.menu-open {
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem; 
+    color: var(--neutral-dark-grayish-blue);   
+}
+
+li {
+    cursor: pointer;
+}
+
+.landing-part {
+    margin-block: 2rem;
+    display: flex;
+    
+    gap: 2rem;
+    
+}
+
+/* First Section CSS */
+.first-section {
+    display: flex; 
+    flex-direction: column;
+    /* max-width: 65%; */
+}
+
+.first-sec-heading {
+    font-size: 3rem;
+    /* max-width: 300px; */
+    margin-block: 1.5rem;
+}
+
+.first-section :nth-child(2)  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* justify-content: center; */
+}
+
+.first-sec-para {
+    /* max-width: 350px; */
+    margin-block-start: 1.6rem !important;
+}
+
+.first-section :nth-child(2) :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.first-sec-btn {
+    max-width: 150px;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-soft-red);
+    border: none;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: var(--normal);
+}
+
+/* Second Section CSS */
+
+.second-section {
+    /* max-width: 35%; */
+    padding: 1rem;
+}
+
+.second-sec-heading {
+    margin-top: 0;
+    padding-top: 0.5rem;
+    font-size: 2rem;
+}   
+
+.aside-section {
+    padding-block: 1.5rem;
+}
+
+/* Third section CSS */
+
+.third-section {
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    gap: 1rem;
+}
+
+.card__image > img {
+    height: 120px;
+}
+
+.number {
+    margin-top: 0;
+    font-size: 2rem;
+
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card__content :nth-child(2) {
+    color: var(--neutral-very-dark-blue) !important;
+    font-weight: var(--bold) !important;
+    margin-top: 10px;
+}
+
+.card__content :nth-child(3) {
+    max-width: 250px;
+    color: var(--neutral-dark-grayish-blue);
+    margin-top: 5px;
+}
+
+@media (max-width: 1166px) {
+    .landing-part {
+        flex-direction: column;
+    }
+
+    .third-section {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 732px) {
+    body {
+        padding-inline: 2rem;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .menu-open {
+        display: block;
+    }
+}
+
+@media (min-width: 1010px) {
+    .first-sec-heading {
+        max-width: 300px;
+    }
+
+    .first-sec-para {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 1211px) {
+    .first-sec-heading {
+        max-width: 2000px;
+        
+    }
+
+    .first-sec-para {
+        max-width: 2000px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .first-sec-heading {
+        font-size: 2rem;
+    }
+}
+
+/* Side Bar CSS */
+.hidden {
+    display: none;
+}
+
+.side-bar-section > nav {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-block-start: 2.5rem;
+    min-height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    width: 300px;
+}
+
+.menu-close-div {
+    margin-left: auto;
+}
+
+.menu-close {
+    border: 0;
+    background-color: white;
+    
+}
+
+.side-bar {
+    list-style: none;
+    display: grid;
+    gap: 2rem;
+    font-size: 2rem;
+    color: var(--neutral-very-dark-blue) !important;
+}
+

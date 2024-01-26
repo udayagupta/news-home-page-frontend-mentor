@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utilities.css">
+  <link rel="stylesheet" href="reset.css">
+  <script src="script.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/images/logo.svg" alt="">
+    <nav>
+      <ul class="navigation clr-dark-grayish-blue ">
+        <li class="item transition hover-clr-soft-red">Home</li>
+        <li class="item transition hover-clr-soft-red">New</li>
+        <li class="item transition hover-clr-soft-red">Popular</li>
+        <li class="item transition hover-clr-soft-red">Trending</li>
+        <li class="item transition hover-clr-soft-red">Categories</li>
+      </ul>
+      <button class="menu-open" onclick="openSideBar()">
+        <img src="assets/images/icon-menu.svg" alt="">
+      </button>
+    </nav>
+  </header>
+
+  <main class="landing-part">
+    <section class="first-section">
+      <div>
+        <picture>
+          <source media="(min-width: 481px)" srcset="assets/images/image-web-3-desktop.jpg" alt="">
+          <source media="(max-width: 480px)" srcset="assets/images/image-web-3-mobile.jpg">
+          <img src="assets/images/image-web-3-desktop.jpg" alt="">
+        </picture>
+      </div>
+      <div>
+        <h1 class="first-sec-heading">The Bright Future of Web 3.0?</h1>
+        <div>
+          <p class="first-sec-para clr-dark-grayish-blue ">
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?
+          </p>
+          <button class="first-sec-btn hover-very-dark-blue hover-clr-off-white transition">
+            READ MORE
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="second-section bg-very-dark-blue">
+      <h2 class="second-sec-heading clr-soft-orange">New</h2>
+
+      <div class="aside-section border-bottom">
+        <h3 class="second-sec-subheadings clr-off-white hover-clr-soft-orange transition | first">Hydrogen VS Electric Cars</h3>
+        <p class="clr-grayish-blue fw-bold">
+          Will hydrogen-fueled cars ever catch up to EVs?
+        </p>
+      </div>
+      <div class="aside-section border-bottom">
+        <h3 class="second-sec-subheadings clr-off-white hover-clr-soft-orange transition | second">The Downsides of AI Artistry</h3>
+        <p class="clr-grayish-blue fw-bold">
+          What are the possible adverse effects of on-demand AI image generation?
+        </p>
+      </div>
+      <div class="aside-section">
+        <h3 class="second-sec-subheadings clr-off-white hover-clr-soft-orange transition | third">Is VC Funding Drying Up?</h3>
+        <p class="clr-grayish-blue fw-bold">
+          Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </p>
+      </div>
+    </section>
+
+  </main>
+  
+  <section class="third-section">
+    <div class="card | third-first">
+      <div class="card__image">
+        <img src="assets/images/image-retro-pcs.jpg" alt="">
+      </div>
+      <div class="card__content">
+        <h2 class="number clr-grayish-blue">01</h2>
+        <p class="fw-bold">Reviving Retro PCs</p>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+
+    <div class="card | third-second">
+      <div class="card__image">
+        <img src="assets/images/image-top-laptops.jpg" alt="">
+      </div>
+      <div class="card__content">
+        <h2 class="number clr-grayish-blue">02</h2>
+        <p class="fw-bold">Top 10 Laptops of 2022</p>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+
+    <div class="card | third-third">
+      <div class="card__image">
+        <img src="assets/images/image-gaming-growth.jpg" alt="">
+      </div>
+      <div class="card__content">
+        <h2 class="number clr-grayish-blue">03</h2>
+        <p class="fw-bold">The Growth of Gaming</p>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  
+  </section>
+
+  <aside class="side-bar-section hidden">
+    <nav>
+      <div class="menu-close-div">
+        <button class="menu-close" onclick="closeSideBar()">
+          <img src="assets/images/icon-menu-close.svg" alt="">
+        </button>
+      </div>
+      <ul class="side-bar clr-dark-grayish-blue ">
+        <li class="item transition hover-clr-soft-red">Home</li>
+        <li class="item transition hover-clr-soft-red">New</li>
+        <li class="item transition hover-clr-soft-red">Popular</li>
+        <li class="item transition hover-clr-soft-red">Trending</li>
+        <li class="item transition hover-clr-soft-red">Categories</li>
+      </ul>
+    </nav>
+  </aside>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
